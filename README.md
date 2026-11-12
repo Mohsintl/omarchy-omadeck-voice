@@ -30,6 +30,7 @@ The tooltip shows the current state and, when there is one, the last transcript.
   ```sh
   git clone https://github.com/Mohsintl/omadeck.git
   cd omadeck
+  git checkout 3f3e0baaa32d836365c0a7ecee0c6f097eba5216
   ./install.sh --quick
   ```
 
