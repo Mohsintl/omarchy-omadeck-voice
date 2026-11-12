@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.mohsintl.omadeck-voice",
+  "name": "OmaDeck Voice",
+  "version": "0.1.0",
+  "author": "Mohsin TL",
+  "license": "Apache-2.0",
+  "description": "Bar indicator for OmaDeck voice control: shows when the assistant is listening, thinking or acting, and toggles the microphone.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "VoiceIndicator.qml"
+  },
+  "barWidget": {
+    "displayName": "OmaDeck Voice",
+    "description": "Voice control state and microphone toggle",
+    "category": "Audio",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
