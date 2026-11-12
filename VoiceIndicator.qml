@@ -54,6 +54,15 @@ BarWidget {
     }
   }
 
+  // The file appears the first time the daemon runs. Until then, look again
+  // every few seconds so installing OmaDeck does not require a shell restart.
+  Timer {
+    running: root.unconfigured
+    interval: 15000
+    repeat: true
+    onTriggered: state.reload()
+  }
+
   implicitWidth: button.implicitWidth
   implicitHeight: button.implicitHeight
 
